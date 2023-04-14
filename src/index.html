@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz日本語能力試験</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script type="module" src="./bundle.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="primary-heading">
+        <ruby
+          >Quiz日本語能力試験<rp>(</rp
+          ><rt>Japanese Language Proficiency Test</rt><rp>)</rp></ruby
+        >
+      </h1>
+      <nav class="nav">
+        <button class="button button--n5" name="level" value="N5">
+          <p>N5</p>
+          <ion-icon name="document-text"></ion-icon>
+        </button>
+        <button class="button button--n4" name="level" value="N4">
+          <p>N4</p>
+          <ion-icon name="document-text"></ion-icon>
+        </button>
+        <button class="button button--n3" name="level" value="N3">
+          <p>N3</p>
+          <ion-icon name="document-text"></ion-icon>
+        </button>
+        <button class="button button--n2" name="level" value="N2">
+          <p>N2</p>
+          <ion-icon name="document-text"></ion-icon>
+        </button>
+        <button class="button button--n1" name="level" value="N1">
+          <p>N1</p>
+          <ion-icon name="document-text"></ion-icon>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section class="section">
+        <div class="quiz--container">
+          <div class="quiz--left_column">
+            <h2 class="secondary-heading">SCORES &#10026; SUMMARY</h2>
+						<div class="random level--box">
+							<div class="level-content">
+								<p class="level-name">N5</p>
+								<p class="section-name-jp"><ruby>言語知識<rp>(</rp><rt>げんごちしき</rt><rp>)</rp></ruby><span><ruby>（文法）<rp>(</rp><rt>ぶんぽう</rt><rp>)</rp></ruby></span>・<ruby>読解<rp>(</rp><rt>どっかい</rt><rp>)</rp></ruby></p>
+							</div>
+							<div class="statistic">
+								<p class="random further">
+									第0問 n問中 </br>Total of n quizzes, quiz #0
+								</p>
+							</div>
+						</div>
+					</div>
+          <div class="quiz--right_column">
+						<h2 class="secondary-heading"><ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby><ruby>能力試験<rp>(</rp><rt>のうりょくしけん</rt><rp>)</rp></ruby>の<ruby>実施日<rp>(</rp><rt>じっしび</rt><rp>)</rp></ruby></h2>
+						<div class="introduce">
+							<p>Japanese-Language Proficiency Test 2023</p>
+							<h2>第1回：2023年7月2日（日）</h2>
+							<h2 class="red">【<span>365</span>日】</h2>
+						</div>
+						<div class = "spin"></div>
+						<div class="quiz--content">
+									<div class="count-down hidden">
+										<div class="count-spin"></div>
+										<div class="count-time"></div>
+									</div>
+							<div class="quiz-head">
+								<div class="left-anchor"></div>
+								<div class="problem-name"></div>
+								<div class="ques-content"></div>
+							</div>
+							<div class="quiz-main"></div>
+						</div>
+						<div class="btn--control"></div>
+        </div>
+      </section>
+
+			<!-- MODAL HIDE-->
+			<div class="method modal hidden">
+				<div class="method-select">
+					<p>クイズの方法をお選びなさい。</p>
+					<p>Which method do you want to quiz?</p>
+					<p class="emoji">😎</p>
+				</div>
+				<div class="button-select">
+					<button class="btn btn-select" name ="method" value="withScore">
+						得点あり<br />Quiz with score
+					</button>
+					<button class="btn btn-select" name ="method" value="withoutScore">
+						得点なし<br />Quiz without score
+					</button>
+				</div>
+			</div>
+			<div class="timeout modal hidden">
+				<div class="method-select">
+					<p>制限時間になりました。</p>
+					<p>Your quiz time is run out !</p>
+					<p class="emoji">💥</p>
+				</div>
+			</div>
+			<div class="endquiz modal hidden">
+				<div class="method-select">
+					<p>Quiz 終了！ご苦労さまでした。</p>
+					<p>Congratulations for your best try!</p>
+					<p class="emoji">🏆</p>
+					<p>Try not to become a man of success, but rather try to become a man of value.
+						- Albert Einstein</p>
+				</div>
+			</div>
+			<ion-icon name="close-outline" class="hidden"></ion-icon>
+			<div class="overlay hidden"></div>
+		</main>
+    <!-- Footer -->
+    <footer>
+      <div class="copyright">2023&copy by Chinen Akira. Powered by JLPT.</div>
+      <div class="license">『Source: <a href="https://www.jlpt.jp/">https://www.jlpt.jp/</a>』</div>
+    </footer>
+  </body>
+</html>
